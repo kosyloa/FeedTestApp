@@ -1,0 +1,11 @@
+framework module DxFeedSwiftFramework {
+  umbrella header "DxFeedSwiftFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module DxFeedSwiftFramework.Swift {
+  header "DxFeedSwiftFramework-Swift.h"
+  requires objc
+}
