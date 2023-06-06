@@ -8,30 +8,7 @@
 import UIKit
 import DxFeedSwiftFramework
 
-class TestEventListener: DXEventListener, Hashable {
-    func receiveEvents(_ events: [MarketEvent]) {
-        print(events)
-    }
-
-    static func == (lhs: TestEventListener, rhs: TestEventListener) -> Bool {
-        lhs.hashValue == rhs.hashValue
-    }
-
-    let name: String
-
-    init(name: String) {
-        self.name = name
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
-    }
-
-
-}
-
 class ViewController: UIViewController {
-    private var testListner: TestEventListener?
     private var endpoint: DXEndpoint?
     private var subscription:DXFeedSubcription?
 
