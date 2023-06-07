@@ -482,6 +482,736 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "Property",
+            "printedName": "Property",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO4nameyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO4nameyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "properties",
+                "printedName": "properties",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO10propertiesyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO10propertiesyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "address",
+                "printedName": "address",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO7addressyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO7addressyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "user",
+                "printedName": "user",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO4useryA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO4useryA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "password",
+                "printedName": "password",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8passwordyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8passwordyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "threadPoolSize",
+                "printedName": "threadPoolSize",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO14threadPoolSizeyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO14threadPoolSizeyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "aggregationPeriod",
+                "printedName": "aggregationPeriod",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO17aggregationPeriodyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO17aggregationPeriodyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "wildcardEnable",
+                "printedName": "wildcardEnable",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO14wildcardEnableyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO14wildcardEnableyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "publisherProperties",
+                "printedName": "publisherProperties",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO19publisherPropertiesyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO19publisherPropertiesyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "publisherThreadPoolSize",
+                "printedName": "publisherThreadPoolSize",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO23publisherThreadPoolSizeyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO23publisherThreadPoolSizeyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "eventTime",
+                "printedName": "eventTime",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO9eventTimeyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO9eventTimeyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "storeEverything",
+                "printedName": "storeEverything",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO15storeEverythingyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO15storeEverythingyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "schemeNanoTime",
+                "printedName": "schemeNanoTime",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO14schemeNanoTimeyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO14schemeNanoTimeyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "schemeEnabledPropertyPrefix",
+                "printedName": "schemeEnabledPropertyPrefix",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DxFeedSwiftFramework.DXEndpoint.Property.Type) -> DxFeedSwiftFramework.DXEndpoint.Property",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO013schemeEnabledF6PrefixyA2EmF",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO013schemeEnabledF6PrefixyA2EmF",
+                "moduleName": "DxFeedSwiftFramework"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DxFeedSwiftFramework.DXEndpoint.Property?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueAESgSS_tcfc",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueAESgSS_tcfc",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueSSvp",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueSSvp",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueSSvg",
+                    "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8rawValueSSvg",
+                    "moduleName": "DxFeedSwiftFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DxFeedSwiftFramework.DXEndpoint.Property]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Property",
+                        "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                        "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8allCasesSayAEGvpZ",
+                "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8allCasesSayAEGvpZ",
+                "moduleName": "DxFeedSwiftFramework",
+                "static": true,
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[DxFeedSwiftFramework.DXEndpoint.Property]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO8allCasesSayAEGvgZ",
+                    "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO8allCasesSayAEGvgZ",
+                    "moduleName": "DxFeedSwiftFramework",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO",
+            "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC8PropertyO",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[DxFeedSwiftFramework.DXEndpoint.Property]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Property",
+                            "printedName": "DxFeedSwiftFramework.DXEndpoint.Property",
+                            "usr": "s:20DxFeedSwiftFramework10DXEndpointC8PropertyO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              }
+            ]
+          },
+          {
             "kind": "Var",
             "name": "role",
             "printedName": "role",
@@ -7538,252 +8268,252 @@
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 460,
+      "offset": 467,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 512,
+      "offset": 519,
       "length": 19,
       "value": "\"dxfeed.properties\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 584,
       "length": 16,
       "value": "\"dxfeed.address\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 646,
       "length": 13,
       "value": "\"dxfeed.user\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 698,
+      "offset": 705,
       "length": 17,
       "value": "\"dxfeed.password\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 761,
+      "offset": 768,
       "length": 23,
       "value": "\"dxfeed.threadPoolSize\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 830,
+      "offset": 837,
       "length": 26,
       "value": "\"dxfeed.aggregationPeriod\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 909,
       "length": 24,
       "value": "\"dxfeed.wildcard.enable\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 972,
+      "offset": 979,
       "length": 24,
       "value": "\"dxpublisher.properties\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1049,
       "length": 28,
       "value": "\"dxpublisher.threadPoolSize\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1116,
+      "offset": 1123,
       "length": 22,
       "value": "\"dxendpoint.eventTime\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1184,
+      "offset": 1191,
       "length": 28,
       "value": "\"dxendpoint.storeEverything\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 1265,
       "length": 19,
       "value": "\"dxscheme.nanoTime\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1323,
+      "offset": 1330,
       "length": 19,
       "value": "\"dxscheme.enabled.\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 460,
+      "offset": 467,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 512,
+      "offset": 519,
       "length": 19,
       "value": "\"dxfeed.properties\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 584,
       "length": 16,
       "value": "\"dxfeed.address\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 646,
       "length": 13,
       "value": "\"dxfeed.user\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 698,
+      "offset": 705,
       "length": 17,
       "value": "\"dxfeed.password\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 761,
+      "offset": 768,
       "length": 23,
       "value": "\"dxfeed.threadPoolSize\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 830,
+      "offset": 837,
       "length": 26,
       "value": "\"dxfeed.aggregationPeriod\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 909,
       "length": 24,
       "value": "\"dxfeed.wildcard.enable\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 972,
+      "offset": 979,
       "length": 24,
       "value": "\"dxpublisher.properties\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1049,
       "length": 28,
       "value": "\"dxpublisher.threadPoolSize\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1116,
+      "offset": 1123,
       "length": 22,
       "value": "\"dxendpoint.eventTime\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1184,
+      "offset": 1191,
       "length": 28,
       "value": "\"dxendpoint.storeEverything\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 1265,
       "length": 19,
       "value": "\"dxscheme.nanoTime\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1323,
+      "offset": 1330,
       "length": 19,
       "value": "\"dxscheme.enabled.\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 4324,
+      "offset": 4331,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 4759,
+      "offset": 4766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5351,
+      "offset": 5358,
       "length": 40,
       "value": "\"qdnet_\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 5369,
+      "offset": 5376,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5373,
+      "offset": 5380,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5378,
+      "offset": 5385,
       "length": 11,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5388,
+      "offset": 5395,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5390,
+      "offset": 5397,
       "length": 1,
       "value": "\"\""
     },

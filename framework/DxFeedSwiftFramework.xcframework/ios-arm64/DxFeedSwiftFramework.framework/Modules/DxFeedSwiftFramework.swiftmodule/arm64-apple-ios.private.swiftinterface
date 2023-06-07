@@ -26,6 +26,31 @@ public typealias Role = DxFeedSwiftFramework.DXEndpoint.Role
       get
     }
   }
+  public enum Property : Swift.String, Swift.CaseIterable {
+    case name
+    case properties
+    case address
+    case user
+    case password
+    case threadPoolSize
+    case aggregationPeriod
+    case wildcardEnable
+    case publisherProperties
+    case publisherThreadPoolSize
+    case eventTime
+    case storeEverything
+    case schemeNanoTime
+    case schemeEnabledPropertyPrefix
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [DxFeedSwiftFramework.DXEndpoint.Property]
+    public typealias RawValue = Swift.String
+    public static var allCases: [DxFeedSwiftFramework.DXEndpoint.Property] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   final public let role: DxFeedSwiftFramework.DXEndpoint.Role
   public func add<O>(_ observer: O) where O : DxFeedSwiftFramework.DXEndpointObserver, O : Swift.Hashable
   public func remove<O>(_ observer: O) where O : DxFeedSwiftFramework.DXEndpointObserver, O : Swift.Hashable
@@ -223,6 +248,9 @@ public protocol MarketEvent {
 extension DxFeedSwiftFramework.DXEndpoint.Role : Swift.Equatable {}
 extension DxFeedSwiftFramework.DXEndpoint.Role : Swift.Hashable {}
 extension DxFeedSwiftFramework.DXEndpoint.Role : Swift.RawRepresentable {}
+extension DxFeedSwiftFramework.DXEndpoint.Property : Swift.Equatable {}
+extension DxFeedSwiftFramework.DXEndpoint.Property : Swift.Hashable {}
+extension DxFeedSwiftFramework.DXEndpoint.Property : Swift.RawRepresentable {}
 extension DxFeedSwiftFramework.EventCode : Swift.Equatable {}
 extension DxFeedSwiftFramework.EventCode : Swift.Hashable {}
 extension DxFeedSwiftFramework.DXEndpointState : Swift.Equatable {}

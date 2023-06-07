@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		642BE4A82A2E01750052340A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE4A72A2E01750052340A /* AppDelegate.swift */; };
 		642BE4AA2A2E01750052340A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE4A92A2E01750052340A /* SceneDelegate.swift */; };
-		642BE4AC2A2E01750052340A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE4AB2A2E01750052340A /* ViewController.swift */; };
+		642BE4AC2A2E01750052340A /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE4AB2A2E01750052340A /* QuoteViewController.swift */; };
 		642BE4AF2A2E01750052340A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642BE4AD2A2E01750052340A /* Main.storyboard */; };
 		642BE4B12A2E01760052340A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642BE4B02A2E01760052340A /* Assets.xcassets */; };
 		642BE4B42A2E01760052340A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642BE4B22A2E01760052340A /* LaunchScreen.storyboard */; };
 		642BE4DB2A2F94F40052340A /* DxFeedSwiftFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642BE4DA2A2F94F40052340A /* DxFeedSwiftFramework.xcframework */; };
 		642BE4DC2A2F94F40052340A /* DxFeedSwiftFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 642BE4DA2A2F94F40052340A /* DxFeedSwiftFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64BA926D2A30924000BE26A0 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA926C2A30924000BE26A0 /* QuoteTableViewController.swift */; };
+		64BA926F2A30956F00BE26A0 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA926E2A30956F00BE26A0 /* QuoteCell.swift */; };
+		64BA92712A309AF400BE26A0 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA92702A309AF400BE26A0 /* QuoteModel.swift */; };
+		64BA92732A30B2B300BE26A0 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA92722A30B2B300BE26A0 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,12 +39,16 @@
 		642BE4A42A2E01750052340A /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642BE4A72A2E01750052340A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		642BE4A92A2E01750052340A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		642BE4AB2A2E01750052340A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		642BE4AB2A2E01750052340A /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		642BE4AE2A2E01750052340A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		642BE4B02A2E01760052340A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642BE4B32A2E01760052340A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		642BE4B52A2E01760052340A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		642BE4DA2A2F94F40052340A /* DxFeedSwiftFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DxFeedSwiftFramework.xcframework; path = framework/DxFeedSwiftFramework.xcframework; sourceTree = "<group>"; };
+		64BA926C2A30924000BE26A0 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
+		64BA926E2A30956F00BE26A0 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		64BA92702A309AF400BE26A0 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		64BA92722A30B2B300BE26A0 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,15 @@
 			children = (
 				642BE4A72A2E01750052340A /* AppDelegate.swift */,
 				642BE4A92A2E01750052340A /* SceneDelegate.swift */,
-				642BE4AB2A2E01750052340A /* ViewController.swift */,
+				642BE4AB2A2E01750052340A /* QuoteViewController.swift */,
+				64BA926C2A30924000BE26A0 /* QuoteTableViewController.swift */,
+				64BA926E2A30956F00BE26A0 /* QuoteCell.swift */,
+				64BA92702A309AF400BE26A0 /* QuoteModel.swift */,
 				642BE4AD2A2E01750052340A /* Main.storyboard */,
 				642BE4B02A2E01760052340A /* Assets.xcassets */,
 				642BE4B22A2E01760052340A /* LaunchScreen.storyboard */,
 				642BE4B52A2E01760052340A /* Info.plist */,
+				64BA92722A30B2B300BE26A0 /* PaddingLabel.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -166,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642BE4AC2A2E01750052340A /* ViewController.swift in Sources */,
+				64BA92712A309AF400BE26A0 /* QuoteModel.swift in Sources */,
+				64BA92732A30B2B300BE26A0 /* PaddingLabel.swift in Sources */,
+				64BA926F2A30956F00BE26A0 /* QuoteCell.swift in Sources */,
+				642BE4AC2A2E01750052340A /* QuoteViewController.swift in Sources */,
 				642BE4A82A2E01750052340A /* AppDelegate.swift in Sources */,
+				64BA926D2A30924000BE26A0 /* QuoteTableViewController.swift in Sources */,
 				642BE4AA2A2E01750052340A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
