@@ -7,6 +7,10 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Trade : DxFeedSwiftFramework.TradeBase, DxFeedSwiftFramework.MarketEvent {
+  final public let type: DxFeedSwiftFramework.EventCode
+  @objc deinit
+}
 public typealias Role = DxFeedSwiftFramework.DXEndpoint.Role
 @_hasMissingDesignatedInitializers public class DXEndpoint {
   public enum Role : Swift.UInt32 {
@@ -23,7 +27,6 @@ public typealias Role = DxFeedSwiftFramework.DXEndpoint.Role
     }
   }
   final public let role: DxFeedSwiftFramework.DXEndpoint.Role
-  public func test()
   public func add<O>(_ observer: O) where O : DxFeedSwiftFramework.DXEndpointObserver, O : Swift.Hashable
   public func remove<O>(_ observer: O) where O : DxFeedSwiftFramework.DXEndpointObserver, O : Swift.Hashable
   public static func builder() -> DxFeedSwiftFramework.Builder
@@ -145,6 +148,49 @@ public enum EventCode : Swift.CaseIterable {
   final public let flags: Swift.Int32
   final public let buyer: Swift.String
   final public let seller: Swift.String
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class TradeBase : Swift.CustomStringConvertible {
+  final public let eventSymbol: Swift.String
+  final public let eventTime: Swift.Int64
+  final public let timeSequence: Swift.Int64
+  final public let timeNanoPart: Swift.Int32
+  final public let exchangeCode: Swift.Int16
+  final public let price: Swift.Double
+  final public let change: Swift.Double
+  final public let size: Swift.Double
+  final public let dayId: Swift.Int32
+  final public let dayVolume: Swift.Double
+  final public let dayTurnover: Swift.Double
+  final public let flags: Swift.Int32
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Profile : DxFeedSwiftFramework.MarketEvent, Swift.CustomStringConvertible {
+  final public let type: DxFeedSwiftFramework.EventCode
+  final public let eventSymbol: Swift.String
+  final public let eventTime: Swift.Int64
+  final public let descriptionStr: Swift.String
+  final public let statusReason: Swift.String
+  final public let haltStartTime: Swift.Int64
+  final public let haltEndTime: Swift.Int64
+  final public let highLimitPrice: Swift.Double
+  final public let lowLimitPrice: Swift.Double
+  final public let high52WeekPrice: Swift.Double
+  final public let low52WeekPrice: Swift.Double
+  final public let beta: Swift.Double
+  final public let earningsPerShare: Swift.Double
+  final public let dividendFrequency: Swift.Double
+  final public let exDividendAmount: Swift.Double
+  final public let exDividendDayId: Swift.Int32
+  final public let shares: Swift.Double
+  final public let freeFloat: Swift.Double
+  final public let flags: Swift.Int32
   public var description: Swift.String {
     get
   }

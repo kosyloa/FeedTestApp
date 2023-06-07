@@ -25,6 +25,101 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Trade",
+        "printedName": "Trade",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventCode",
+                "printedName": "DxFeedSwiftFramework.EventCode",
+                "usr": "s:20DxFeedSwiftFramework9EventCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework5TradeC4typeAA9EventCodeOvp",
+            "mangledName": "$s20DxFeedSwiftFramework5TradeC4typeAA9EventCodeOvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventCode",
+                    "printedName": "DxFeedSwiftFramework.EventCode",
+                    "usr": "s:20DxFeedSwiftFramework9EventCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework5TradeC4typeAA9EventCodeOvg",
+                "mangledName": "$s20DxFeedSwiftFramework5TradeC4typeAA9EventCodeOvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20DxFeedSwiftFramework5TradeC",
+        "mangledName": "$s20DxFeedSwiftFramework5TradeC",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:20DxFeedSwiftFramework9TradeBaseC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "DxFeedSwiftFramework.TradeBase"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "MarketEvent",
+            "printedName": "MarketEvent",
+            "usr": "s:20DxFeedSwiftFramework11MarketEventP",
+            "mangledName": "$s20DxFeedSwiftFramework11MarketEventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -434,26 +529,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "test",
-            "printedName": "test()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20DxFeedSwiftFramework10DXEndpointC4testyyF",
-            "mangledName": "$s20DxFeedSwiftFramework10DXEndpointC4testyyF",
-            "moduleName": "DxFeedSwiftFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -2184,6 +2259,46 @@
         "moduleName": "DxFeedSwiftFramework",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "graal_api",
+        "printedName": "graal_api",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "graal_api",
+        "printedName": "graal_api",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -3965,6 +4080,656 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TradeBase",
+        "printedName": "TradeBase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eventSymbol",
+            "printedName": "eventSymbol",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC11eventSymbolSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11eventSymbolSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC11eventSymbolSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11eventSymbolSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventTime",
+            "printedName": "eventTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC9eventTimes5Int64Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC9eventTimes5Int64Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC9eventTimes5Int64Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC9eventTimes5Int64Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeSequence",
+            "printedName": "timeSequence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC12timeSequences5Int64Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12timeSequences5Int64Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC12timeSequences5Int64Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12timeSequences5Int64Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeNanoPart",
+            "printedName": "timeNanoPart",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC12timeNanoParts5Int32Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12timeNanoParts5Int32Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC12timeNanoParts5Int32Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12timeNanoParts5Int32Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exchangeCode",
+            "printedName": "exchangeCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC12exchangeCodes5Int16Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12exchangeCodes5Int16Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC12exchangeCodes5Int16Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC12exchangeCodes5Int16Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC5priceSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5priceSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC5priceSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5priceSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "change",
+            "printedName": "change",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC6changeSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC6changeSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC6changeSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC6changeSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC4sizeSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC4sizeSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC4sizeSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC4sizeSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dayId",
+            "printedName": "dayId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC5dayIds5Int32Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5dayIds5Int32Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC5dayIds5Int32Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5dayIds5Int32Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dayVolume",
+            "printedName": "dayVolume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC9dayVolumeSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC9dayVolumeSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC9dayVolumeSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC9dayVolumeSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dayTurnover",
+            "printedName": "dayTurnover",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC11dayTurnoverSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11dayTurnoverSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC11dayTurnoverSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11dayTurnoverSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flags",
+            "printedName": "flags",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC5flagss5Int32Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5flagss5Int32Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC5flagss5Int32Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC5flagss5Int32Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework9TradeBaseC11descriptionSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11descriptionSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework9TradeBaseC11descriptionSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC11descriptionSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20DxFeedSwiftFramework9TradeBaseC",
+        "mangledName": "$s20DxFeedSwiftFramework9TradeBaseC",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4012,6 +4777,1020 @@
         "moduleName": "DxFeedSwiftFramework",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Profile",
+        "printedName": "Profile",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventCode",
+                "printedName": "DxFeedSwiftFramework.EventCode",
+                "usr": "s:20DxFeedSwiftFramework9EventCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC4typeAA9EventCodeOvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC4typeAA9EventCodeOvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventCode",
+                    "printedName": "DxFeedSwiftFramework.EventCode",
+                    "usr": "s:20DxFeedSwiftFramework9EventCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC4typeAA9EventCodeOvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC4typeAA9EventCodeOvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventSymbol",
+            "printedName": "eventSymbol",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC11eventSymbolSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC11eventSymbolSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC11eventSymbolSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC11eventSymbolSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventTime",
+            "printedName": "eventTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC9eventTimes5Int64Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC9eventTimes5Int64Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC9eventTimes5Int64Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC9eventTimes5Int64Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "descriptionStr",
+            "printedName": "descriptionStr",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC14descriptionStrSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC14descriptionStrSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC14descriptionStrSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC14descriptionStrSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusReason",
+            "printedName": "statusReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC12statusReasonSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC12statusReasonSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC12statusReasonSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC12statusReasonSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "haltStartTime",
+            "printedName": "haltStartTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC13haltStartTimes5Int64Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC13haltStartTimes5Int64Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC13haltStartTimes5Int64Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC13haltStartTimes5Int64Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "haltEndTime",
+            "printedName": "haltEndTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC11haltEndTimes5Int64Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC11haltEndTimes5Int64Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC11haltEndTimes5Int64Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC11haltEndTimes5Int64Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "highLimitPrice",
+            "printedName": "highLimitPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC14highLimitPriceSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC14highLimitPriceSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC14highLimitPriceSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC14highLimitPriceSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lowLimitPrice",
+            "printedName": "lowLimitPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC13lowLimitPriceSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC13lowLimitPriceSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC13lowLimitPriceSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC13lowLimitPriceSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "high52WeekPrice",
+            "printedName": "high52WeekPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC15high52WeekPriceSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC15high52WeekPriceSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC15high52WeekPriceSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC15high52WeekPriceSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "low52WeekPrice",
+            "printedName": "low52WeekPrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC14low52WeekPriceSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC14low52WeekPriceSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC14low52WeekPriceSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC14low52WeekPriceSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "beta",
+            "printedName": "beta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC4betaSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC4betaSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC4betaSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC4betaSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "earningsPerShare",
+            "printedName": "earningsPerShare",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC16earningsPerShareSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC16earningsPerShareSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC16earningsPerShareSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC16earningsPerShareSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dividendFrequency",
+            "printedName": "dividendFrequency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC17dividendFrequencySdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC17dividendFrequencySdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC17dividendFrequencySdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC17dividendFrequencySdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exDividendAmount",
+            "printedName": "exDividendAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC16exDividendAmountSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC16exDividendAmountSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC16exDividendAmountSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC16exDividendAmountSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exDividendDayId",
+            "printedName": "exDividendDayId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC15exDividendDayIds5Int32Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC15exDividendDayIds5Int32Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC15exDividendDayIds5Int32Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC15exDividendDayIds5Int32Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shares",
+            "printedName": "shares",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC6sharesSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC6sharesSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC6sharesSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC6sharesSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "freeFloat",
+            "printedName": "freeFloat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC9freeFloatSdvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC9freeFloatSdvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC9freeFloatSdvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC9freeFloatSdvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flags",
+            "printedName": "flags",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC5flagss5Int32Vvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC5flagss5Int32Vvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC5flagss5Int32Vvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC5flagss5Int32Vvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20DxFeedSwiftFramework7ProfileC11descriptionSSvp",
+            "mangledName": "$s20DxFeedSwiftFramework7ProfileC11descriptionSSvp",
+            "moduleName": "DxFeedSwiftFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20DxFeedSwiftFramework7ProfileC11descriptionSSvg",
+                "mangledName": "$s20DxFeedSwiftFramework7ProfileC11descriptionSSvg",
+                "moduleName": "DxFeedSwiftFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20DxFeedSwiftFramework7ProfileC",
+        "mangledName": "$s20DxFeedSwiftFramework7ProfileC",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "MarketEvent",
+            "printedName": "MarketEvent",
+            "usr": "s:20DxFeedSwiftFramework11MarketEventP",
+            "mangledName": "$s20DxFeedSwiftFramework11MarketEventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "graal_api",
+        "printedName": "graal_api",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -4878,6 +6657,26 @@
         "moduleName": "DxFeedSwiftFramework",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "graal_api",
+        "printedName": "graal_api",
+        "declKind": "Import",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -5935,56 +7734,56 @@
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 4357,
+      "offset": 4324,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 4792,
+      "offset": 4759,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5384,
+      "offset": 5351,
       "length": 40,
       "value": "\"qdnet_\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 5402,
+      "offset": 5369,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5406,
+      "offset": 5373,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 5378,
       "length": 11,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5421,
+      "offset": 5388,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Api\/DXEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 5423,
+      "offset": 5390,
       "length": 1,
       "value": "\"\""
     },
@@ -6234,6 +8033,27 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/TradeMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/TradeMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 623,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/TradeMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TimeAndSale.swift",
       "kind": "StringLiteral",
       "offset": 1600,
@@ -6335,6 +8155,97 @@
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TimeAndSale.swift",
       "kind": "StringLiteral",
       "offset": 1991,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 332,
+      "value": "\"DXFG_TRADE_BASE_T eventSymbol: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1384,
+      "length": 1,
+      "value": "\" eventTime: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 1,
+      "value": "\" timeSequence: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 1,
+      "value": "\", timeNanoPart: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 1,
+      "value": "\", exchangeCode: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 1,
+      "value": "\", price: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
+      "length": 1,
+      "value": "\", change: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1548,
+      "length": 1,
+      "value": "\", size: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1565,
+      "length": 1,
+      "value": "\", dayId: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1584,
+      "length": 1,
+      "value": "\", dayVolume: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1611,
+      "length": 1,
+      "value": "\", dayTurnover: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1642,
+      "length": 1,
+      "value": "\", flags: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/TradeBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1661,
       "length": 12,
       "value": "\"\""
     },
@@ -7081,6 +8992,139 @@
       "value": "\"com.dxfeed.set_queue\""
     },
     {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2192,
+      "length": 606,
+      "value": "\"DXFG_PROFILE_T eventSymbol: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2240,
+      "length": 1,
+      "value": "\" eventTime: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2266,
+      "length": 1,
+      "value": "\" description: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2299,
+      "length": 1,
+      "value": "\", statusReason: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2332,
+      "length": 1,
+      "value": "\", haltStartTime: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2367,
+      "length": 1,
+      "value": "\", haltEndTime: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2398,
+      "length": 1,
+      "value": "\", highLimitPrice: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2435,
+      "length": 1,
+      "value": "\", lowLimitPrice: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2470,
+      "length": 1,
+      "value": "\", high52WeekPrice: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2509,
+      "length": 1,
+      "value": "\", low52WeekPrice: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2546,
+      "length": 1,
+      "value": "\", beta: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2563,
+      "length": 1,
+      "value": "\", earningsPerShare: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2604,
+      "length": 1,
+      "value": "\", dividendFrequency: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2647,
+      "length": 1,
+      "value": "\", exDividendAmount: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2688,
+      "length": 1,
+      "value": "\", exDividendDayId: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2727,
+      "length": 1,
+      "value": "\", shares: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2748,
+      "length": 1,
+      "value": "\", freeFloat: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2775,
+      "length": 1,
+      "value": "\", flags: \""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 2794,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Events\/Market\/Quote.swift",
       "kind": "StringLiteral",
       "offset": 1468,
@@ -7240,6 +9284,27 @@
       "offset": 1319,
       "length": 1,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/ProfileMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 356,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/ProfileMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 622,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/Events\/Markets\/ProfileMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/akosylo\/Projects\/dxfeed-graal-swift-api\/DxFeedSwiftFramework\/Native\/ErrorHandling\/ErrorCheck.swift",

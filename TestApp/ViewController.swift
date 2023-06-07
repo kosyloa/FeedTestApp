@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             return
         }
         if endpoint == nil {
-            endpoint = try? DXEndpoint.builder().withRole(.feed).withProperty("test", "value").build()
+            endpoint = try? DXEndpoint.builder().withRole(.feed).build()
             endpoint?.add(self)
         }
         try? endpoint?.connect(address)
