@@ -8,6 +8,13 @@
 import UIKit
 import DxFeedSwiftFramework
 
+class Counter {
+    private (set) var value : Int64 = 0
+    func add (_ amount: Int64) {
+        OSAtomicAdd64(amount, &value)
+    }
+}
+
 struct Colors {
     let background = UIColor(red: 18/255, green: 16/255, blue: 49/255, alpha: 1.0)
     let cellBackground = UIColor(red: 31/255, green: 30/255, blue: 65/255, alpha: 1.0)
@@ -18,12 +25,16 @@ struct Colors {
 }
 
 class QuoteTableViewController: UIViewController {
+    var counter = Counter()
+    let numberFormatter = NumberFormatter()
+    var startTime = Date.now
+    var lastValue: Int64 = 0
     private var endpoint: DXEndpoint?
     private var subscription:DXFeedSubcription?
     private var profileSubscription:DXFeedSubcription?
 
     var dataSource = [String: QuoteModel]()
-    var symbols = ["AAPL", "IBM", "MSFT", "EUR/CAD", "ETH/USD:GDAX", "GOOG", "BAC" , "CSCO", "ABCE", "INTC"]
+    var symbols = ["ETH/USD:GDAX"]
 
     @IBOutlet var quoteTableView: UITableView!
     @IBOutlet var connectionStatusLabel: UILabel!
@@ -32,6 +43,8 @@ class QuoteTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberFormatter.numberStyle = .decimal
+
         self.view.backgroundColor = colors.background
         self.quoteTableView.backgroundColor = colors.background
 
@@ -40,12 +53,12 @@ class QuoteTableViewController: UIViewController {
         try? SystemProperty.setProperty("com.devexperts.connector.proto.heartbeatTimeout", "10s")
 
         endpoint = try? DXEndpoint.builder().withRole(.feed)
-            .withProperty(DXEndpoint.Property.aggregationPeriod.rawValue, "3")
+//            .withProperty(DXEndpoint.Property.aggregationPeriod.rawValue, "3")
             .build()
         endpoint?.add(self)
-        try? endpoint?.connect("demo.dxfeed.com:7300")
+        try? endpoint?.connect("Alekseys-MacBook-Pro.local:6666")
         
-        subscription = try? endpoint?.getFeed()?.createSubscription(.quote)
+        subscription = try? endpoint?.getFeed()?.createSubscription(.timeAndSale)
         profileSubscription = try? endpoint?.getFeed()?.createSubscription(.profile)
         subscription?.add(self)
         profileSubscription?.add(self)
@@ -54,7 +67,30 @@ class QuoteTableViewController: UIViewController {
         }
         try? subscription?.addSymbols(symbols)
         try? profileSubscription?.addSymbols(symbols)
+        DispatchQueue.global(qos: .background).async {
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
+                    let lastStart = self.startTime
+                    let currentValue = self.counter.value
+
+                    self.startTime = Date.now
+                    let seconds = Date.now.timeIntervalSince(lastStart)
+                    let speed = seconds == 0 ? nil : NSNumber(value: Double(currentValue - self.lastValue) / seconds)
+
+                    self.lastValue = currentValue
+                    if let speed = speed {
+                        print("---------------------------------------------------")
+                        print("Event speed                \(self.numberFormatter.string(from: speed)!) per/sec")
+                        DispatchQueue.main.async {
+                            self.connectionStatusLabel.text = self.numberFormatter.string(from: speed)!
+                        }
+                        print("---------------------------------------------------")
+                    }
+                }
+                RunLoop.current.run()
+        }
+
     }
+
 }
 
 extension QuoteTableViewController: DXEndpointObserver {
@@ -68,7 +104,7 @@ extension QuoteTableViewController: DXEndpointObserver {
         case .connected:
             status = "Connected ✅"
         case .closed:
-            status = "Closed ⛔️"
+            status = "Closed ⛔️gi"
         @unknown default:
             status = "Not connected"
         }
@@ -80,24 +116,26 @@ extension QuoteTableViewController: DXEndpointObserver {
 
 extension QuoteTableViewController: DXEventListener {
     func receiveEvents(_ events: [DxFeedSwiftFramework.MarketEvent]) {
+        let count = events.count
+        counter.add(Int64(count))
 
-        events.forEach { event in
-            switch event.type {
-            case .quote:
-                if let quote = event as? Quote {
-                    dataSource[event.eventSymbol]?.update(quote)
-                }
-            case .profile:
-                if let profile = event as? Profile {
-                    dataSource[event.eventSymbol]?.update(profile.descriptionStr)
-                }
-            default:
-                print(event)
-            }
-        }
-        DispatchQueue.main.async {
-            self.quoteTableView.reloadData()
-        }
+//        events.forEach { event in
+//            switch event.type {
+//            case .quote:
+//                if let quote = event as? Quote {
+//                    dataSource[event.eventSymbol]?.update(quote)
+//                }
+//            case .profile:
+//                if let profile = event as? Profile {
+//                    dataSource[event.eventSymbol]?.update(profile.descriptionStr)
+//                }
+//            default: break
+////                print(event)
+//            }
+//        }
+//        DispatchQueue.main.async {
+//            self.quoteTableView.reloadData()
+//        }
     }
 }
 

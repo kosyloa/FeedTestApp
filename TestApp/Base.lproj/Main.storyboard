@@ -126,7 +126,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpL-FX-1nC">
                                                             <rect key="frame" x="150.66666666666663" y="5" width="217.33333333333337" height="80"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-3h-hz9" customClass="PaddingLabel" customModule="TestApp" customModuleProvider="target">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-3h-hz9" customClass="PaddingLabel" customModule="TestApp" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="107" height="80"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -137,7 +137,7 @@
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my2-SE-epx" customClass="PaddingLabel" customModule="TestApp" customModuleProvider="target">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my2-SE-epx" customClass="PaddingLabel" customModule="TestApp" customModuleProvider="target">
                                                                     <rect key="frame" x="110.00000000000003" y="0.0" width="107.33333333333334" height="80"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -183,9 +183,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="askLabel" destination="OfZ-3h-hz9" id="IBc-RJ-S3o"/>
+                                            <outlet property="askLabel" destination="my2-SE-epx" id="tkL-sA-jqL"/>
                                             <outlet property="backgroundContentView" destination="BCA-mh-she" id="fsH-Zm-RvD"/>
-                                            <outlet property="bidLabel" destination="my2-SE-epx" id="42i-ox-GMK"/>
+                                            <outlet property="bidLabel" destination="OfZ-3h-hz9" id="plj-ku-X0m"/>
                                             <outlet property="priceContentView" destination="bpL-FX-1nC" id="usV-Qe-Ohu"/>
                                             <outlet property="symbolNameLabel" destination="bYJ-iy-MIv" id="wSx-Fv-M8g"/>
                                         </connections>
@@ -227,10 +227,10 @@
     </scenes>
     <designables>
         <designable name="OfZ-3h-hz9">
-            <size key="intrinsicContentSize" width="28.333333333333332" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="24.666666666666668" height="20.333333333333332"/>
         </designable>
         <designable name="my2-SE-epx">
-            <size key="intrinsicContentSize" width="24.666666666666668" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="28.333333333333332" height="20.333333333333332"/>
         </designable>
     </designables>
     <resources>
