@@ -120,6 +120,93 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SystemProperty",
+        "printedName": "SystemProperty",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setProperty",
+            "printedName": "setProperty(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20DxFeedSwiftFramework14SystemPropertyC03setF0yySS_SStKFZ",
+            "mangledName": "$s20DxFeedSwiftFramework14SystemPropertyC03setF0yySS_SStKFZ",
+            "moduleName": "DxFeedSwiftFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getProperty",
+            "printedName": "getProperty(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20DxFeedSwiftFramework14SystemPropertyC03getF0ySSSgSSFZ",
+            "mangledName": "$s20DxFeedSwiftFramework14SystemPropertyC03getF0ySSSgSSFZ",
+            "moduleName": "DxFeedSwiftFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20DxFeedSwiftFramework14SystemPropertyC",
+        "mangledName": "$s20DxFeedSwiftFramework14SystemPropertyC",
+        "moduleName": "DxFeedSwiftFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",

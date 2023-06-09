@@ -20,11 +20,13 @@ struct Colors {
 class QuoteTableViewController: UIViewController {
     private var endpoint: DXEndpoint?
     private var subscription:DXFeedSubcription?
+    private var profileSubscription:DXFeedSubcription?
 
     var dataSource = [String: QuoteModel]()
-    var symbols = ["AAPL", "IBM", "MSFT", "EUR/CAD", "ETH/USD:GDAX", "GOOG", "GOOGL", "BAC" , "CSCO", "ABCE", "INTC"]
+    var symbols = ["AAPL", "IBM", "MSFT", "EUR/CAD", "ETH/USD:GDAX", "GOOG", "BAC" , "CSCO", "ABCE", "INTC"]
 
     @IBOutlet var quoteTableView: UITableView!
+    @IBOutlet var connectionStatusLabel: UILabel!
 
     let colors = Colors()
 
@@ -35,31 +37,62 @@ class QuoteTableViewController: UIViewController {
 
         quoteTableView.separatorStyle = .none
 
-        endpoint = try? DXEndpoint.builder().withRole(.feed).withProperty(DXEndpoint.Property.aggregationPeriod.rawValue, "3").build()
+        try? SystemProperty.setProperty("com.devexperts.connector.proto.heartbeatTimeout", "10s")
+
+        endpoint = try? DXEndpoint.builder().withRole(.feed)
+            .withProperty(DXEndpoint.Property.aggregationPeriod.rawValue, "3")
+            .build()
         endpoint?.add(self)
         try? endpoint?.connect("demo.dxfeed.com:7300")
         
         subscription = try? endpoint?.getFeed()?.createSubscription(.quote)
+        profileSubscription = try? endpoint?.getFeed()?.createSubscription(.profile)
         subscription?.add(self)
+        profileSubscription?.add(self)
         symbols.forEach {
             dataSource[$0] = QuoteModel()
         }
         try? subscription?.addSymbols(symbols)
+        try? profileSubscription?.addSymbols(symbols)
     }
 }
 
 extension QuoteTableViewController: DXEndpointObserver {
     func endpointDidChangeState(old: DxFeedSwiftFramework.DXEndpointState, new: DxFeedSwiftFramework.DXEndpointState) {
+        var status = "Not connected"
+        switch new {
+        case .notConnected:
+            status = "Not connected ❌"
+        case .connecting:
+            status = "Connecting 🔄"
+        case .connected:
+            status = "Connected ✅"
+        case .closed:
+            status = "Closed ⛔️"
+        @unknown default:
+            status = "Not connected"
+        }
+        DispatchQueue.main.async {
+            self.connectionStatusLabel.text = "Connection status: \(status)" 
+        }
     }
 }
 
 extension QuoteTableViewController: DXEventListener {
     func receiveEvents(_ events: [DxFeedSwiftFramework.MarketEvent]) {
+
         events.forEach { event in
-            if event.type == .quote {
+            switch event.type {
+            case .quote:
                 if let quote = event as? Quote {
                     dataSource[event.eventSymbol]?.update(quote)
                 }
+            case .profile:
+                if let profile = event as? Profile {
+                    dataSource[event.eventSymbol]?.update(profile.descriptionStr)
+                }
+            default:
+                print(event)
             }
         }
         DispatchQueue.main.async {
@@ -77,11 +110,9 @@ extension QuoteTableViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCellId", for: indexPath) as! QuoteCell
         let symbol = symbols[indexPath.row]
         let quote = dataSource[symbol]
-        cell.update(model: quote, symbol: symbol)
+        cell.update(model: quote, symbol: symbol, description: quote?.descriptionString)
         return cell
     }
-
-
 }
 
 extension QuoteTableViewController: UITableViewDelegate {

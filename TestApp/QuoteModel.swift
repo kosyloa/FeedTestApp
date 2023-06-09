@@ -14,6 +14,8 @@ class QuoteModel {
 
     private var current: Quote?
     private var previous: Quote?
+    private var descriptionStr: String = ""
+
     init() {
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 4
@@ -27,6 +29,10 @@ class QuoteModel {
     var bid: String {
         let number = NSNumber(value: current?.bidPrice ?? 0)
         return formatter.string(from: number)  ?? ""
+    }
+
+    var descriptionString: String {
+        return descriptionStr
     }
 
     var increaseAsk: Bool? {
@@ -46,6 +52,10 @@ class QuoteModel {
     func update(_ value: Quote) {
         previous = current
         current = value
+    }
+
+    func update(_ desc: String) {
+        descriptionStr = desc
     }
     
 }

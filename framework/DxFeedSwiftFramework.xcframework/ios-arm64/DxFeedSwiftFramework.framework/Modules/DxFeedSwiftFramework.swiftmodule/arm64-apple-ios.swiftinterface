@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios16.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DxFeedSwiftFramework
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DxFeedSwiftFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import DxFeedSwiftFramework
 import Foundation
@@ -9,6 +9,11 @@ import _Concurrency
 import _StringProcessing
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Trade : DxFeedSwiftFramework.TradeBase, DxFeedSwiftFramework.MarketEvent {
   final public let type: DxFeedSwiftFramework.EventCode
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SystemProperty {
+  public static func setProperty(_ key: Swift.String, _ value: Swift.String) throws
+  public static func getProperty(_ key: Swift.String) -> Swift.String?
   @objc deinit
 }
 public typealias Role = DxFeedSwiftFramework.DXEndpoint.Role

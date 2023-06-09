@@ -11,6 +11,11 @@ import _StringProcessing
   final public let type: DxFeedSwiftFramework.EventCode
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class SystemProperty {
+  public static func setProperty(_ key: Swift.String, _ value: Swift.String) throws
+  public static func getProperty(_ key: Swift.String) -> Swift.String?
+  @objc deinit
+}
 public typealias Role = DxFeedSwiftFramework.DXEndpoint.Role
 @_hasMissingDesignatedInitializers public class DXEndpoint {
   public enum Role : Swift.UInt32 {
