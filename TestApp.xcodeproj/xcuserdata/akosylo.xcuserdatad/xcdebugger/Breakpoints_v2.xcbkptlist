@@ -3,4 +3,84 @@
    uuid = "44A08899-F300-46B8-9242-FF10AB64F862"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F1FBE49-319A-49B2-8FF6-0A8EA43DD64F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestApp/PerfTestViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F1FBE49-319A-49B2-8FF6-0A8EA43DD64F - a178e6eab132c177"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfTestApp.PerfTestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PerfTestApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akosylo/Projects/FeedTestApp/TestApp/PerfTestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "6F1FBE49-319A-49B2-8FF6-0A8EA43DD64F - 367a8e790a6d9c57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestApp.PerfTestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TestApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akosylo/Projects/FeedTestApp/TestApp/PerfTestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "6F1FBE49-319A-49B2-8FF6-0A8EA43DD64F - 367a8e790a6d9cd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestApp.PerfTestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TestApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akosylo/Projects/FeedTestApp/TestApp/PerfTestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "6F1FBE49-319A-49B2-8FF6-0A8EA43DD64F - 367a8e790a6d9b2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestApp.PerfTestViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TestApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akosylo/Projects/FeedTestApp/TestApp/PerfTestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

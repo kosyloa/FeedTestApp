@@ -18,12 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="demo.dxfeed.com:7300" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4U-G9-2iX">
-                                <rect key="frame" x="15" y="60.666666666666657" width="233" height="34"/>
+                                <rect key="frame" x="15" y="79.666666666666671" width="233" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaf-y4-aEy">
-                                <rect key="frame" x="263" y="60" width="120" height="35"/>
+                                <rect key="frame" x="263" y="79" width="120" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="8fN-Hp-uf8"/>
                                     <constraint firstAttribute="height" constant="35" id="wgN-qC-J4k"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ETH/USD:GDAX" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-LR-85q">
-                                <rect key="frame" x="14.999999999999986" y="114.66666666666669" width="231.66666666666663" height="34"/>
+                                <rect key="frame" x="14.999999999999986" y="133.66666666666666" width="231.66666666666663" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Ls7-M5-yV5"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDX-TW-ZYB">
-                                <rect key="frame" x="257.66666666666669" y="114" width="125.33333333333331" height="35"/>
+                                <rect key="frame" x="257.66666666666669" y="133" width="125.33333333333331" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="mEh-k6-PJ4"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hwD-zA-Ffc">
-                                <rect key="frame" x="0.0" y="167" width="393" height="237"/>
+                                <rect key="frame" x="0.0" y="186" width="393" height="237"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="237" id="cGi-oc-s5R"/>
@@ -80,7 +80,7 @@
                             <constraint firstItem="Vaf-y4-aEy" firstAttribute="centerY" secondItem="N4U-G9-2iX" secondAttribute="centerY" id="hsN-LM-xJq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vaf-y4-aEy" secondAttribute="trailing" constant="10" id="pDP-ci-Hvh"/>
                             <constraint firstItem="Vaf-y4-aEy" firstAttribute="leading" secondItem="N4U-G9-2iX" secondAttribute="trailing" constant="15" id="rU2-Tg-0WN"/>
-                            <constraint firstItem="Vaf-y4-aEy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="xqc-hY-qYq"/>
+                            <constraint firstItem="Vaf-y4-aEy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yUn-fv-bWY"/>
                         </constraints>
                     </view>
                     <connections>

@@ -22,13 +22,19 @@ class QuoteModel {
     }
 
     var ask: String {
-        let number = NSNumber(value: current?.askPrice ?? 0)
+        guard let price = current?.askPrice else {
+            return "---"
+        }
+        let number = NSNumber(value: price)
         return formatter.string(from: number) ?? ""
     }
 
     var bid: String {
-        let number = NSNumber(value: current?.bidPrice ?? 0)
-        return formatter.string(from: number)  ?? ""
+        guard let price = current?.bidPrice else {
+            return "---"
+        }
+        let number = NSNumber(value: price)
+        return formatter.string(from: number) ?? ""       
     }
 
     var descriptionString: String {
